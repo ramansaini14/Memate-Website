@@ -97,10 +97,10 @@
 .stickySocialWrap {
   position: fixed;
   margin-left: -97px;
-  margin-top: 191px;
+  margin-top: 176px;
   animation-name: scroll;
   top: 50px;
-  transition: top 0.7s cubic-bezier(0.68,-0.13, 0.04, 1.01), background-color 0.5s ease, box-shadow 0.5s ease ;
+  transition: top 0.7s cubic-bezier(0.68,-0.13, 0.04, 1.01), background-color 0.5s ease, box-shadow 0.5s ease;
 }
 .stickySocialWrap.scrolled {
   top: -92px;

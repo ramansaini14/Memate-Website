@@ -131,10 +131,15 @@ function App() {
 
   const [newposts, setNewPosts] = useState();
 
+
+  // added multiple rerendering of useEffect if page is clicked twice %blame @ramansaini14 for changes 
+  // status: committed on vps tunnel and changes staged automatically
   const handleTabClick = (categoryId) => {
-    setPosts([]);
-    setActiveCategory(categoryId);
-    setCurrentPage(1);
+    if (activeCategory !== categoryId) {
+      setActiveCategory(categoryId);
+      setPosts([]);
+      setCurrentPage(1);
+    }
   };
 
   // PostsCategories======================
@@ -301,3 +306,4 @@ export default App;
 
 
 
+// upda
